@@ -48,7 +48,20 @@ function App() {
           <h1 className="text-4xl md:text-6xl font-black text-slate-950 mt-6 tracking-tight leading-tight max-w-3xl">
            "Component-Driven Web Design Made  <span className="text-blue-600">Fast & Easy"</span>
           </h1>
-          
+          <p className="text-base md:text-lg text-slate-600 mt-6 max-w-xl leading-relaxed">
+           "Build modern web applications seamlessly combining the power of React's reusable components with Tailwind's utility-first classes."
+          </p>
+          <div className="mt-10 flex gap-4 w-full justify-center sm:w-auto">
+            <button className="w-1/2 sm:w-auto bg-slate-950 hover:bg-slate-800 text-white text-sm font-semibold px-8 py-3.5 rounded-xl transition shadow-lg shadow-slate-200">
+              Documentation
+            </button>
+            <button className="w-1/2 sm:w-auto bg-white hover:bg-slate-50 text-slate-700 text-sm font-semibold px-8 py-3.5 rounded-xl border border-slate-200 transition">
+              View Demo
+            </button>
+          </div>
+        </header>
+
+        
 
           </div>
         </section>
