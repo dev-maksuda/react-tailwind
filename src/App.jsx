@@ -1,5 +1,9 @@
 
 import { useState } from 'react';
+import reactLogo from './assets/images/react.png';
+import tailwindLogo from './assets/images/tailwind.png';
+import imagesLogo from './assets/images/images.jpg';
+
 
 function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -62,29 +66,41 @@ function App() {
         </header>
 
         {/* Features Section */}
-        <section className="max-w-6xl mx-auto px-6 pb-24">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            
-            <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-xl font-bold mb-4"></div>
-              <h3 className="text-lg font-bold text-slate-800">React </h3>
-              <p className="text-sm text-slate-600 mt-2 leading-relaxed"></p>
-            </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-xl font-bold mb-4"></div>
-              <h3 className="text-lg font-bold text-slate-800">Utility-First CSS</h3>
-              <p className="text-sm text-slate-600 mt-2 leading-relaxed"></p>
-            </div>
+      {/* Features Section */}
+<section className="max-w-6xl mx-auto px-6 pb-24">
+  <div className="grid grid-cols-1 md:grid-cols-3 gap-6 items-stretch">
+    
+    {/* Card 1 - React */}
+    <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col h-full">
+      <div className="w-full bg-blue-50 text-blue-600 rounded-xl overflow-hidden mb-4">
+        <img src={reactLogo} alt="React Logo" className="w-full h-70 object-cover" />
+      </div>
+      <h3 className="text-lg font-bold text-slate-800">React</h3>
+      <p className="text-sm text-slate-600 mt-2 leading-relaxed">Build dynamic web interfaces instantly.</p>
+    </div>
 
-            <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
-              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-xl font-bold mb-4"></div>
-              <h3 className="text-lg font-bold text-slate-800"></h3>
-              <p className="text-sm text-slate-600 mt-2 leading-relaxed"></p>
-            </div>
+    {/* Card 2 - Tailwind */}
+    <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col h-full">
+      <div className="w-full bg-blue-50 text-blue-600 rounded-xl overflow-hidden mb-4">
+        <img src={tailwindLogo} alt="Tailwind Logo" className="w-full h-70 object-cover" />
+      </div>
+      <h3 className="text-lg font-bold text-slate-800">Tailwind</h3>
+      <p className="text-sm text-slate-600 mt-2 leading-relaxed">Design beautiful websites without custom CSS.</p>
+    </div>
 
-          </div>
-        </section>
+    {/* Card 3 - Vite */}
+    <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition flex flex-col h-full">
+      <div className="w-full bg-blue-50 text-blue-600 rounded-xl overflow-hidden mb-4">
+        <img src={imagesLogo} alt="Vite Logo" className="w-full h-70 object-cover" />
+      </div>
+      <h3 className="text-lg font-bold text-slate-800">Vite</h3>
+      <p className="text-sm text-slate-600 mt-2 leading-relaxed">Fast development server and bundling tool.</p>
+    </div>
+
+  </div>
+</section>
+
 
       </div>
     </>
