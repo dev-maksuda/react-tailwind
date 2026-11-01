@@ -61,7 +61,17 @@ function App() {
           </div>
         </header>
 
-        
+        {/* Features Section */}
+        <section className="max-w-6xl mx-auto px-6 pb-24">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            
+            <div className="bg-white p-6 rounded-2xl border border-slate-100 shadow-sm hover:shadow-md transition">
+              <div className="w-10 h-10 bg-blue-50 text-blue-600 rounded-lg flex items-center justify-center text-xl font-bold mb-4"></div>
+              <h3 className="text-lg font-bold text-slate-800">React </h3>
+              <p className="text-sm text-slate-600 mt-2 leading-relaxed"></p>
+            </div>
+
+            <
 
           </div>
         </section>
