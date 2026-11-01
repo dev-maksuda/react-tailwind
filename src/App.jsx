@@ -40,7 +40,16 @@ function App() {
           )}
         </nav>
 
-       
+        {/* Hero Section */}
+        <header className="max-w-6xl mx-auto px-6 py-20 text-center md:py-32 flex flex-col items-center">
+          <span className="bg-blue-50 text-blue-700 text-xs font-bold uppercase tracking-widest px-4 py-1.5 rounded-full inline-block">
+            React + Tailwind CSS
+          </span>
+          <h1 className="text-4xl md:text-6xl font-black text-slate-950 mt-6 tracking-tight leading-tight max-w-3xl">
+           "Component-Driven Web Design Made  <span className="text-blue-600">Fast & Easy"</span>
+          </h1>
+          
+
           </div>
         </section>
 
